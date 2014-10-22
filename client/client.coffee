@@ -12,17 +12,17 @@ Template.hello.events "click button": ->
 
 Template.bankruptcy.rendered = ->
   console.log 'bankruptcy'
+  $("body").scrollTop(0)
   $("#nav").onePageNav
     begin: ->
       console.log "start"
 
     end: ->
       console.log "stop"
-
-    scrollOffset: 60
 
 Template.disability.rendered = ->
-  console.log 'bankruptcy'
+  console.log 'disability'
+  $("body").scrollTop(0)
   $("#nav").onePageNav
     begin: ->
       console.log "start"
@@ -30,10 +30,9 @@ Template.disability.rendered = ->
     end: ->
       console.log "stop"
 
-    scrollOffset: 60
-
-Template.appeal.rendered = ->
-  console.log 'bankruptcy'
+Template.appeals.rendered = ->
+  console.log "appeal"
+  $("body").scrollTop(0)
   $("#nav").onePageNav
     begin: ->
       console.log "start"
@@ -41,10 +40,9 @@ Template.appeal.rendered = ->
     end: ->
       console.log "stop"
 
-    scrollOffset: 60
-
-Template.collection.rendered = ->
-  console.log 'bankruptcy'
+Template.collections.rendered = ->
+  console.log 'collection'
+  $("body").scrollTop(0)
   $("#nav").onePageNav
     begin: ->
       console.log "start"
@@ -52,5 +50,4 @@ Template.collection.rendered = ->
     end: ->
       console.log "stop"
 
-    scrollOffset: 60
 

@@ -8,4 +8,6 @@ autopublish
 insecure
 coffeescript
 particle4dev:sass
-
+wolves:bourbon
+iron:router
+mquandalle:bower

@@ -1,27 +1,35 @@
 <template name='bankruptcy'>
 <section class='main'>
   <div class='main-left'>
+    <img id='logo' src='images/gwenlogo.png' />
+
     <ul id="nav">
-      <li><a href="#when">When might someone seek protection under Bankruptcy?</a></li>
+      <li class="current"><a href="#when">When might someone seek protection under Bankruptcy?</a></li>
       <li><a href="#symptoms">Symptoms</a></li>
       <li><a href="#remedies">Remedies</a></li>
       <li><a href="#process">Bankruptcy Process - Steps after filing</a></li>
       <li><a href="#details">Chapter 7 - Details &amp; Requirements</a></li>
       <li><a href="#steps">Required Steps</a></li>
     </ul>
+
+    <!-- Button trigger modal -->
+    <button class="btn btn-info bankruptcy-meeting" data-toggle="modal" data-target="#myModal">
+       Our First Meeting&nbsp;&nbsp;&nbsp;<i class="fa fa-info"></i>
+    </button>
   </div>
 
   <div class='main-left-hidden'></div>
 
   <div class='main-right'>
+    {{>header}}
     <div class="bankruptcy-main">
       <h2>Bankruptcy and Debt Relief</h2>
 
       <p>Bankruptcy protection can be used to stop home foreclosures, auto repossessions, debt collections, wage garnishments and/or to restructure debt.</p>
-       
+      <br/>
       <h3 id="when">When might someone seek protection under Bankruptcy?</h3>
 
-      <p>It is common to need help from a bankruptcy attorney after divorce, loss of job, lengthy illness, to avoid or manage judgments from lawsuits or auto repossessions, wage garnishments, or excessive credit card debt.</p>
+      <p>It is common to need help from a bankruptcy attorney after divorce, loss of job, lengthy illness, to avoid or manage judgments from lawsuits or auto repossessions, wage garnishments, or excessive credit card debt.</p><br/><br/>
 
       <h3 id="symptoms">Symptoms:</h3>
       <ul>
@@ -116,5 +124,40 @@
     </div>
 
   </div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Our First Bankruptcy Meeting</h4>
+      </div>
+      <div class="modal-body">
+
+        <p>What to bring to our initial free consultation:</p><p>
+        </p><ol>
+          <li>Driver's License - or copy</li>
+          <li>Social Security Card - or copy</li>
+          <li>Most recent Pay Stub - from your job</li>
+          <li>Most recent income tax return filed - IRS-1040</li>
+          <li>Your bills and notices</li>
+          <li>Name(s) &amp; address(es) of person(s) to whom you owe child support</li>
+          <li>Legal notices of foreclosure, garnishment or lawsuit</li>
+          <li>In our initial consultation you will not be required to pay any fee but we will discuss your situation and gather the paperwork necessary to begin the process if we determine that bankruptcy will help you!</li>
+        </ol>
+        
+        <p>Go to: www.annualcreditreport.com for your free annual credit report.</p> 
+       
+        <p>(If you save it to PDF and email it to us at gwen@hewitt-law.com, we can get your case started.)</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 </section>
 </template>

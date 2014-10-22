@@ -1,7 +1,11 @@
-<head>
-  <title>gwen</title>
-</head>
+<template name="layout">
+  {{>yield}}
+  {{>footer}}
+</template>
 
-<body>
-  {{> disability}}
-</body>
+<template name='footer'>
+  <div class='footer'>
+  Home<br/>
+  Blog
+  </div>
+</template>

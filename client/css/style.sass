@@ -1,6 +1,30 @@
+@import "../../.meteor/local/build/programs/server/assets/packages/wolves_bourbon/bourbon"
+
 body
   margin: 0
   padding: 0
+  font-family: $helvetica
+
+header
+  border-bottom: 1px solid #ccc
+  position: fixed
+  width: 100%
+  height: 60px
+  background: #fff
+  top: 0
+  ul
+    display: flex
+    li
+    flex: 1
+    list-style: none
+    a
+      padding: 0 20px 0 0
+      font-size: 16px
+      text-decoration: none
+      color: #000
+      line-height: 60px
+
+
 
 .main
   display: flex
@@ -14,8 +38,56 @@ body
     position: fixed
     width: 25%
 
+    #logo
+      padding: 40px
+
+    .bankruptcy-meeting, .tax-appeals
+      margin: 0 0 0 40px
+
+    ul#nav
+      font-size: 14px
+      padding: 0 40px
+      li
+        &.current
+          list-style-type: circle
+          color: #fff
+          a
+            color: #fff
+        a
+          color: #aaa
+          text-decoration: none
+
   .main-left-hidden
     flex: 1
 
   .main-right
+    margin-top: 60px
     flex: 3
+
+    .bankruptcy-main, .appeal-main, .collection-main, .disability-main
+      padding-top: 100px
+      padding-left: 80px
+      padding-right: 100px
+      padding-bottom: 80px
+
+    .bankruptcy-main
+      h3, h4
+        margin-top: -65px
+        padding-top: 65px
+
+    .appeal-main
+      h3, h4
+        margin-top: -65px
+        padding-top: 65px
+
+    .disability-main
+      h3, h4
+        margin-top: -65px
+        padding-top: 65px
+
+    .collection-main
+      h3, h4
+        margin-top: -65px
+        padding-top: 65px
+
+
